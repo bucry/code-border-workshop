@@ -12,6 +12,7 @@ lazy val root = project in file(".")
 
 lazy val `data-lake` = project in file("data-lake")
 lazy val `spark-spike` = project in file("spark-spike")
+lazy val `hadoop-spike` = project in file("hadoop-spike")
 
 
 val versionNo = sys.env.get("VERSION") match {

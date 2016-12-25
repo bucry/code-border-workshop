@@ -18,6 +18,7 @@ class SparkDemoSpec extends FunSuite {
     val df = spark.read.json(this.getClass.getClassLoader.getResource("people.json").getPath)
     df.show()
     assert(df.count() == 3)
+
   }
 
 }
